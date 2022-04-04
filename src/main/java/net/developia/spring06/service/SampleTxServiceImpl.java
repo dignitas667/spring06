@@ -2,6 +2,7 @@ package net.developia.spring06.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import lombok.Setter;
 import lombok.extern.log4j.Log4j;
@@ -19,6 +20,7 @@ public class SampleTxServiceImpl implements SampleTxService {
 	private Sample2Mapper mapper2;
 	
 	@Override
+	@Transactional
 	public void addData(String value) {
 		log.info("mapper...................1");
 		mapper1.insertCol1(value);
