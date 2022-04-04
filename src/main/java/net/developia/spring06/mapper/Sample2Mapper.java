@@ -1,6 +1,7 @@
 package net.developia.spring06.mapper;
 
 import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Select;
 
 public interface Sample2Mapper {
 
